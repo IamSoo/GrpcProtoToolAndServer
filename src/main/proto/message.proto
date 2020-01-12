@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option  java_package = "com.day0start.io.grpc";
+
+service user{
+    rpc hello(request) returns(response);
+}
+
+message request {
+    string username = 1;
+}
+
+message response {
+  string reply = 1;
+}
+
